@@ -25,18 +25,33 @@
         <img src="assets/logo/kalaya-character-icon.png" alt="" width="44" height="44">
         <span>Kalaya</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="sr-only">Menu</span>
-      </button>
+
+      <div class="header-tools">
+        <div class="language-switcher" aria-label="Language selector">
+          <button class="language-button is-active" type="button" data-lang-button="en" aria-pressed="true">
+            <span class="flag-icon flag-us" aria-hidden="true"></span>
+            EN
+          </button>
+          <button class="language-button" type="button" data-lang-button="pt" aria-pressed="false">
+            <span class="flag-icon flag-br" aria-hidden="true"></span>
+            PT-BR
+          </button>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle data-i18n-aria="nav.menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only" data-i18n="nav.menu">Menu</span>
+        </button>
+      </div>
+
       <nav id="site-nav" class="site-nav" data-nav>
-        <a href="#game">Game</a>
-        <a href="#gameplay">Gameplay</a>
-        <a href="#world">World</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#game" data-i18n="nav.game">Game</a>
+        <a href="#gameplay" data-i18n="nav.gameplay">Gameplay</a>
+        <a href="#world" data-i18n="nav.world">World</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </header>
 
@@ -44,32 +59,32 @@
       <section class="hero" id="game" aria-labelledby="hero-title">
         <div class="hero-content">
           <img class="hero-logo" src="assets/logo/kalaya-logo-night.png" alt="Kalaya - Tales of Fallen Gods">
-          <p class="eyebrow">Mythic Action-Adventure</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Mythic Action-Adventure</p>
           <h1 id="hero-title">Kalaya &ndash; Tales of Fallen Gods</h1>
-          <p class="hero-subtitle">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             A mythic action-adventure about fallen gods, forgotten memories, elemental combat and the power to stop time.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#gameplay">Watch Gameplay</a>
-            <a class="button button-ghost" href="#world">Explore the World</a>
-            <a class="button button-quiet" href="#contact">Contact</a>
+            <a class="button button-primary" href="#gameplay" data-i18n="hero.watch">Watch Gameplay</a>
+            <a class="button button-ghost" href="#world" data-i18n="hero.explore">Explore the World</a>
+            <a class="button button-quiet" href="#contact" data-i18n="hero.contact">Contact</a>
           </div>
         </div>
-        <div class="hero-scroll" aria-hidden="true">Scroll</div>
+        <div class="hero-scroll" aria-hidden="true" data-i18n="hero.scroll">Scroll</div>
       </section>
 
       <section class="section pitch-section" aria-labelledby="pitch-title">
         <div class="section-grid">
           <div>
-            <p class="eyebrow">The Game</p>
-            <h2 id="pitch-title">A goddess, a lost past and worlds shaped by ancient forces.</h2>
+            <p class="eyebrow" data-i18n="pitch.eyebrow">The Game</p>
+            <h2 id="pitch-title" data-i18n="pitch.title">A goddess, a lost past and worlds shaped by ancient forces.</h2>
           </div>
           <div class="prose">
-            <p>
+            <p data-i18n="pitch.body1">
               Kalaya &ndash; Tales of Fallen Gods is an action-adventure game blending hack n' slash combat, RPG
               progression, elemental systems, puzzles, alchemy and time manipulation.
             </p>
-            <p>
+            <p data-i18n="pitch.body2">
               Players follow Kalaya, a forgotten goddess living as a human, through mythological worlds shaped by fallen
               gods, silent colossal creatures and fragments of a larger divine truth.
             </p>
@@ -79,98 +94,186 @@
 
       <section class="section" aria-labelledby="pillars-title">
         <div class="section-heading">
-          <p class="eyebrow">Gameplay Pillars</p>
-          <h2 id="pillars-title">Combat, craft and mystery moving as one.</h2>
+          <p class="eyebrow" data-i18n="pillars.eyebrow">Gameplay Pillars</p>
+          <h2 id="pillars-title" data-i18n="pillars.title">Combat, craft and mystery moving as one.</h2>
         </div>
         <div class="pillar-grid">
           <article class="pillar-card">
             <span class="card-mark">01</span>
-            <h3>Elemental Combat</h3>
-            <p>Switch elements to open enemy weaknesses, shape combos and respond to shifting encounters.</p>
+            <h3 data-i18n="pillars.elemental.title">Elemental Combat</h3>
+            <p data-i18n="pillars.elemental.body">Switch elements to open enemy weaknesses, shape combos and respond to shifting encounters.</p>
           </article>
           <article class="pillar-card">
             <span class="card-mark">02</span>
-            <h3>Melee &amp; Ranged Action</h3>
-            <p>Move between close-range pressure, ranged tools and stylish action built for readable impact.</p>
+            <h3 data-i18n="pillars.action.title">Melee &amp; Ranged Action</h3>
+            <p data-i18n="pillars.action.body">Move between close-range pressure, ranged tools and stylish action built for readable impact.</p>
           </article>
           <article class="pillar-card">
             <span class="card-mark">03</span>
-            <h3>Time Stop</h3>
-            <p>Freeze moments to solve puzzles, control space and turn impossible combat windows into opportunity.</p>
+            <h3 data-i18n="pillars.time.title">Time Stop</h3>
+            <p data-i18n="pillars.time.body">Freeze moments to solve puzzles, control space and turn impossible combat windows into opportunity.</p>
           </article>
           <article class="pillar-card">
             <span class="card-mark">04</span>
-            <h3>Alchemy &amp; Craft</h3>
-            <p>Gather, combine and use crafted resources to interact with the world and expand player expression.</p>
+            <h3 data-i18n="pillars.alchemy.title">Alchemy &amp; Craft</h3>
+            <p data-i18n="pillars.alchemy.body">Gather, combine and use crafted resources to interact with the world and expand player expression.</p>
           </article>
           <article class="pillar-card">
             <span class="card-mark">05</span>
-            <h3>Mythological Worlds</h3>
-            <p>Explore places where different mythologies echo the same primordial forces in different forms.</p>
+            <h3 data-i18n="pillars.worlds.title">Mythological Worlds</h3>
+            <p data-i18n="pillars.worlds.body">Explore places where different mythologies echo the same primordial forces in different forms.</p>
           </article>
           <article class="pillar-card">
             <span class="card-mark">06</span>
-            <h3>Puzzles &amp; Exploration</h3>
-            <p>Uncover secrets through environmental logic, traversal, dungeons and narrative discovery.</p>
+            <h3 data-i18n="pillars.puzzles.title">Puzzles &amp; Exploration</h3>
+            <p data-i18n="pillars.puzzles.body">Uncover secrets through environmental logic, traversal, dungeons and narrative discovery.</p>
           </article>
         </div>
       </section>
 
       <section class="section gameplay-section" id="gameplay" aria-labelledby="gameplay-title">
         <div class="section-heading">
-          <p class="eyebrow">Gameplay</p>
-          <h2 id="gameplay-title">Prototype footage and gameplay materials.</h2>
+          <p class="eyebrow" data-i18n="gameplay.eyebrow">Gameplay</p>
+          <h2 id="gameplay-title" data-i18n="gameplay.title">Prototype footage and gameplay materials.</h2>
         </div>
         <div class="video-frame" data-video-frame>
-          <div class="video-fallback">
-            <span class="fallback-symbol" aria-hidden="true">▶</span>
-            <h3>Gameplay video coming soon.</h3>
-            <p>The project is ready to embed a trailer from YouTube or a local gameplay video when available.</p>
+          <iframe
+            src="https://www.youtube.com/embed/-nVnXaYVksk"
+            title="Kalaya gameplay video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section music-section" id="music" aria-labelledby="music-title">
+        <div class="music-card">
+          <div class="music-copy">
+            <p class="eyebrow" data-i18n="music.eyebrow">Original Soundtrack</p>
+            <h2 id="music-title" data-i18n="music.title">Original Vocal Theme</h2>
+            <p data-i18n="music.text">
+              Kalaya features an original vocal track produced as part of the game's soundtrack, bringing more identity
+              and emotion to its world.
+            </p>
+          </div>
+          <div class="music-player">
+            <div class="music-orb" aria-hidden="true">
+              <span></span>
+            </div>
+            <audio id="site-music" loop preload="none">
+              <source src="assets/music/kalaya-main-theme.wav" type="audio/wav">
+            </audio>
+            <button id="music-toggle" class="music-player-button" type="button" data-i18n-aria="music.play">
+              <span class="music-icon" aria-hidden="true">♪</span>
+              <span class="music-label" data-i18n="music.play">Play Music</span>
+            </button>
+            <p class="music-note" data-i18n="music.note">No autoplay. The theme starts only after your click.</p>
           </div>
         </div>
       </section>
 
       <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
         <div class="section-heading">
-          <p class="eyebrow">Gallery</p>
-          <h2 id="gallery-title">Screenshots and visual direction.</h2>
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+          <h2 id="gallery-title" data-i18n="gallery.title">Screenshots, concept art and visual identity.</h2>
         </div>
-        <div class="gallery-grid">
-          <button class="gallery-item gallery-wide" type="button" data-lightbox="assets/screenshots/kalaya-character-landscape-01.png" data-title="Kalaya overlooking Realtha">
-            <img src="assets/screenshots/kalaya-character-landscape-01.png" alt="Kalaya in front of a magical landscape" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/realtha-village-01.png" data-title="Realtha village">
-            <img src="assets/screenshots/realtha-village-01.png" alt="A view of Realtha with mountains, a lake and a floating structure" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/fallen-star-landscape-01.png" data-title="Fallen star landscape">
-            <img src="assets/screenshots/fallen-star-landscape-01.png" alt="A magical landscape with a bright celestial body and floating islands" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/main-menu-01.png" data-title="Main menu scene">
-            <img src="assets/screenshots/main-menu-01.png" alt="Kalaya main menu with characters under a magical sky" loading="lazy">
-          </button>
-          <button class="gallery-item gallery-tall" type="button" data-lightbox="assets/concept/kalaya-character-sheet-01.png" data-title="Kalaya character sheet">
-            <img src="assets/concept/kalaya-character-sheet-01.png" alt="Kalaya character sheet with outfit and equipment details" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-lightbox="assets/concept/realtha-landscape-concept-01.png" data-title="Realtha landscape concept">
-            <img src="assets/concept/realtha-landscape-concept-01.png" alt="Painted concept art of a green valley and mountains" loading="lazy">
-          </button>
+
+        <div class="gallery-block">
+          <h3 data-i18n="gallery.screenshots">Screenshots</h3>
+          <div class="gallery-grid gallery-grid-featured">
+            <button class="gallery-item gallery-wide" type="button" data-lightbox="assets/screenshots/kalaya-character-landscape-01.png" data-title-en="Kalaya overlooking Realtha" data-title-pt="Kalaya diante de Realtha" data-alt-en="Kalaya in front of a magical landscape" data-alt-pt="Kalaya diante de uma paisagem mágica">
+              <img src="assets/screenshots/kalaya-character-landscape-01.png" alt="Kalaya in front of a magical landscape" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/screenshots/realtha-village-01.png" data-title-en="Realtha village" data-title-pt="Vila de Realtha" data-alt-en="A view of Realtha with mountains, a lake and a floating structure" data-alt-pt="Vista de Realtha com montanhas, lago e estrutura flutuante">
+              <img src="assets/screenshots/realtha-village-01.png" alt="A view of Realtha with mountains, a lake and a floating structure" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/screenshots/fallen-star-landscape-01.png" data-title-en="Fallen star landscape" data-title-pt="Paisagem da estrela cadente" data-alt-en="A magical landscape with a bright celestial body and floating islands" data-alt-pt="Paisagem mágica com astro brilhante e ilhas flutuantes">
+              <img src="assets/screenshots/fallen-star-landscape-01.png" alt="A magical landscape with a bright celestial body and floating islands" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/screenshots/main-menu-01.png" data-title-en="Main menu scene" data-title-pt="Cena do menu principal" data-alt-en="Kalaya main menu with characters under a magical sky" data-alt-pt="Menu principal de Kalaya com personagens sob um céu mágico">
+              <img src="assets/screenshots/main-menu-01.png" alt="Kalaya main menu with characters under a magical sky" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/screenshots/og-image.png" data-title-en="Social preview image" data-title-pt="Imagem de preview social" data-alt-en="Social preview image for Kalaya with character and landscape" data-alt-pt="Imagem de preview social de Kalaya com personagem e paisagem">
+              <img src="assets/screenshots/og-image.png" alt="Social preview image for Kalaya with character and landscape" loading="lazy">
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-block">
+          <h3 data-i18n="gallery.concept">Concept Art</h3>
+          <div class="gallery-grid">
+            <button class="gallery-item gallery-tall" type="button" data-lightbox="assets/concept/kalaya-character-sheet-01.png" data-title-en="Kalaya character sheet" data-title-pt="Ficha de personagem da Kalaya" data-alt-en="Kalaya character sheet with outfit and equipment details" data-alt-pt="Ficha da Kalaya com detalhes de roupa e equipamentos">
+              <img src="assets/concept/kalaya-character-sheet-01.png" alt="Kalaya character sheet with outfit and equipment details" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/kalaya-character-design-01.png" data-title-en="Kalaya character design" data-title-pt="Design de personagem da Kalaya" data-alt-en="Kalaya character design explorations" data-alt-pt="Exploracoes de design da personagem Kalaya">
+              <img src="assets/concept/kalaya-character-design-01.png" alt="Kalaya character design explorations" loading="lazy">
+            </button>
+            <button class="gallery-item gallery-tall" type="button" data-lightbox="assets/concept/kalaya-character-01.png" data-title-en="Kalaya character art" data-title-pt="Arte da personagem Kalaya" data-alt-en="Full body character art of Kalaya" data-alt-pt="Arte de corpo inteiro da personagem Kalaya">
+              <img src="assets/concept/kalaya-character-01.png" alt="Full body character art of Kalaya" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/realtha-landscape-concept-01.png" data-title-en="Realtha landscape concept" data-title-pt="Concept de paisagem de Realtha" data-alt-en="Painted concept art of a green valley and mountains" data-alt-pt="Concept art pintada de um vale verde com montanhas">
+              <img src="assets/concept/realtha-landscape-concept-01.png" alt="Painted concept art of a green valley and mountains" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/agriculture-character-concept.png" data-title-en="Agriculture character concept" data-title-pt="Concept de personagem agricultora" data-alt-en="Agriculture themed character concept art" data-alt-pt="Concept art de personagem com tema de agricultura">
+              <img src="assets/concept/agriculture-character-concept.png" alt="Agriculture themed character concept art" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/hunter-character-concept.png" data-title-en="Hunter character concept" data-title-pt="Concept de personagem caçadora" data-alt-en="Hunter themed character concept art" data-alt-pt="Concept art de personagem com tema de caça">
+              <img src="assets/concept/hunter-character-concept.png" alt="Hunter themed character concept art" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/sophia-character-concept-01.png" data-title-en="Sophia character concept" data-title-pt="Concept de personagem Sophia" data-alt-en="Sophia character concept in grayscale" data-alt-pt="Concept de personagem Sophia em tons de cinza">
+              <img src="assets/concept/sophia-character-concept-01.png" alt="Sophia character concept in grayscale" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/mascot-concept-01.webp" data-title-en="Mascot concept" data-title-pt="Concept do mascote" data-alt-en="Colored mascot concept art" data-alt-pt="Concept art colorida do mascote">
+              <img src="assets/concept/mascot-concept-01.webp" alt="Colored mascot concept art" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/concept/mascot-sketch-01.webp" data-title-en="Mascot sketch" data-title-pt="Rascunho do mascote" data-alt-en="Black and white mascot sketch" data-alt-pt="Rascunho em preto e branco do mascote">
+              <img src="assets/concept/mascot-sketch-01.webp" alt="Black and white mascot sketch" loading="lazy">
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-block">
+          <h3 data-i18n="gallery.brand">Brand Assets</h3>
+          <div class="gallery-grid gallery-grid-compact">
+            <button class="gallery-item" type="button" data-lightbox="assets/bg/hero-bg.png" data-title-en="Hero background" data-title-pt="Background da hero" data-alt-en="Kalaya hero background with menu composition" data-alt-pt="Background principal de Kalaya com composicao de menu">
+              <img src="assets/bg/hero-bg.png" alt="Kalaya hero background with menu composition" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/kalaya-logo-night.png" data-title-en="Kalaya night logo" data-title-pt="Logo noturna de Kalaya" data-alt-en="Kalaya night logo variant" data-alt-pt="Variante noturna do logo de Kalaya">
+              <img src="assets/logo/kalaya-logo-night.png" alt="Kalaya night logo variant" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/kalaya-logo-orange.png" data-title-en="Kalaya orange logo" data-title-pt="Logo laranja de Kalaya" data-alt-en="Kalaya orange logo variant" data-alt-pt="Variante laranja do logo de Kalaya">
+              <img src="assets/logo/kalaya-logo-orange.png" alt="Kalaya orange logo variant" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/kalaya-logo-outline.png" data-title-en="Kalaya outline logo" data-title-pt="Logo contornada de Kalaya" data-alt-en="Kalaya outline logo variant" data-alt-pt="Variante contornada do logo de Kalaya">
+              <img src="assets/logo/kalaya-logo-outline.png" alt="Kalaya outline logo variant" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/kalaya-logo-snow.png" data-title-en="Kalaya snow logo" data-title-pt="Logo de neve de Kalaya" data-alt-en="Kalaya snow logo variant" data-alt-pt="Variante de neve do logo de Kalaya">
+              <img src="assets/logo/kalaya-logo-snow.png" alt="Kalaya snow logo variant" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/kalaya-character-icon.png" data-title-en="Kalaya character icon" data-title-pt="Ícone da personagem Kalaya" data-alt-en="Portrait icon of Kalaya" data-alt-pt="Ícone de retrato da Kalaya">
+              <img src="assets/logo/kalaya-character-icon.png" alt="Portrait icon of Kalaya" loading="lazy">
+            </button>
+            <button class="gallery-item" type="button" data-lightbox="assets/logo/neanderthal-games-logo.jpg" data-title-en="Neanderthal Games logo" data-title-pt="Logo da Neanderthal Games" data-alt-en="Neanderthal Games studio logo" data-alt-pt="Logo do estúdio Neanderthal Games">
+              <img src="assets/logo/neanderthal-games-logo.jpg" alt="Neanderthal Games studio logo" loading="lazy">
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="section world-section" id="world" aria-labelledby="world-title">
         <div class="world-art" aria-hidden="true"></div>
         <div class="world-copy">
-          <p class="eyebrow">World / Lore</p>
-          <h2 id="world-title">Realtha was born around the crater of a fallen star.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="world.eyebrow">World / Lore</p>
+          <h2 id="world-title" data-i18n="world.title">Realtha was born around the crater of a fallen star.</h2>
+          <p data-i18n="world.body1">
             Its magic shaped the land, its people and the mysteries surrounding the giant silent creatures that appeared
             across the world. They are immense, peaceful and impossible to understand.
           </p>
-          <p>
+          <p data-i18n="world.body2">
             Before the star fell, the creatures began appearing across the planet. Above Realtha stands a colossal tree,
             provisionally called Yggdrasil, watching over a village touched by celestial power.
           </p>
-          <p>
+          <p data-i18n="world.body3">
             In Kalaya, myths are not separate stories. They are fragments of a larger divine truth, connected by fallen
             gods and ancient forces older than memory.
           </p>
@@ -179,27 +282,27 @@
 
       <section class="section features-section" aria-labelledby="features-title">
         <div class="section-heading">
-          <p class="eyebrow">Features</p>
-          <h2 id="features-title">Built for action, discovery and mythic scale.</h2>
+          <p class="eyebrow" data-i18n="features.eyebrow">Features</p>
+          <h2 id="features-title" data-i18n="features.title">Built for action, discovery and mythic scale.</h2>
         </div>
         <ul class="feature-list">
-          <li>Fast-paced hack n' slash combat</li>
-          <li>Element switching system</li>
-          <li>Time-stop mechanics for combat and puzzles</li>
-          <li>Alchemy, crafting and environmental interactions</li>
-          <li>Mythology-inspired worlds</li>
-          <li>Dungeons, bosses and narrative exploration</li>
-          <li>Built in Unreal Engine</li>
+          <li data-i18n="features.item1">Fast-paced hack n' slash combat</li>
+          <li data-i18n="features.item2">Element switching system</li>
+          <li data-i18n="features.item3">Time-stop mechanics for combat and puzzles</li>
+          <li data-i18n="features.item4">Alchemy, crafting and environmental interactions</li>
+          <li data-i18n="features.item5">Mythology-inspired worlds</li>
+          <li data-i18n="features.item6">Dungeons, bosses and narrative exploration</li>
+          <li data-i18n="features.item7">Built in Unreal Engine</li>
         </ul>
       </section>
 
       <section class="section about-section" aria-labelledby="about-title">
         <div class="about-card">
           <div>
-            <p class="eyebrow">About</p>
-            <h2 id="about-title">An independent game project led by Beni.</h2>
+            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+            <h2 id="about-title" data-i18n="about.title">An independent game project led by Beni.</h2>
           </div>
-          <p>
+          <p data-i18n="about.body">
             Kalaya &ndash; Tales of Fallen Gods is an independent game project led by Beni, founder, game designer and
             programmer, responsible for the core gameplay systems, Unreal implementation and creative direction of the
             prototype.
@@ -209,42 +312,30 @@
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-panel">
-          <p class="eyebrow">Business / Contact</p>
-          <h2 id="contact-title">For publishing, events, business and press conversations.</h2>
-          <p>
-            Reach out for gameplay materials, business inquiries, event opportunities or project conversations.
-          </p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Business / Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Interested in Kalaya for publishing, events or partnerships?</h2>
+          <p data-i18n="contact.text">Get in touch for gameplay materials, business inquiries, event opportunities or project conversations.</p>
           <a class="contact-email" href="mailto:talesoffallengods@gmail.com">talesoffallengods@gmail.com</a>
           <div class="contact-actions">
-            <a class="button button-primary" href="mailto:talesoffallengods@gmail.com">Contact by Email</a>
-            <a class="button button-ghost" href="#gameplay">Watch Gameplay</a>
-            <a class="button button-quiet" href="#">Follow Development</a>
+            <a class="button button-primary" href="mailto:talesoffallengods@gmail.com" data-i18n="contact.emailButton">Contact by Email</a>
+            <a class="button button-ghost" href="#gameplay" data-i18n="contact.watch">Watch Gameplay</a>
+            <a class="button button-quiet" href="https://www.instagram.com/neanderthalgames/" target="_blank" rel="noopener" data-i18n="contact.follow">Follow Development</a>
           </div>
-          <div class="social-links" aria-label="Future social links">
-            <!-- Edit these href values when official pages are available. -->
-            <a href="#" aria-label="Itch.io">Itch.io</a>
-            <a href="#" aria-label="Steam">Steam</a>
-            <a href="#" aria-label="YouTube">YouTube</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="Discord">Discord</a>
+          <div class="social-links" aria-label="Official social links">
+            <a href="https://neanderthalgames.itch.io/kalaya-tofg-demo" target="_blank" rel="noopener">Itch.io</a>
+            <a href="https://store.steampowered.com/developer/NeanderthalGames" target="_blank" rel="noopener">Steam</a>
+            <a href="https://www.youtube.com/@NeanderthalGames" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.instagram.com/neanderthalgames/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://discord.gg/hzAZAQFkbS" target="_blank" rel="noopener">Discord</a>
           </div>
         </div>
       </section>
     </main>
 
-    <audio id="site-music" loop preload="none">
-      <source src="assets/music/kalaya-main-theme.wav" type="audio/wav">
-    </audio>
+    <button class="back-to-top" type="button" data-back-to-top data-i18n="ui.top" data-i18n-aria="ui.backToTop">Top</button>
 
-    <button id="music-toggle" class="music-toggle" type="button" aria-label="Play music">
-      <span class="music-icon" aria-hidden="true">♪</span>
-      <span class="music-label">Play Music</span>
-    </button>
-
-    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
-
-    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image" aria-hidden="true" data-lightbox-modal>
-      <button class="lightbox-close" type="button" aria-label="Close gallery" data-lightbox-close>×</button>
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image" aria-hidden="true" data-lightbox-modal data-i18n-aria="ui.galleryDialog">
+      <button class="lightbox-close" type="button" data-lightbox-close data-i18n="ui.close" data-i18n-aria="ui.closeGallery">Close</button>
       <img src="" alt="" data-lightbox-image>
       <p data-lightbox-caption></p>
     </div>

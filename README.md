@@ -1,12 +1,57 @@
 # Kalaya - Tales of Fallen Gods
 
-Static portfolio website for Kalaya - Tales of Fallen Gods, built with plain HTML, CSS and JavaScript for GitHub Pages.
+Static bilingual portfolio website for Kalaya - Tales of Fallen Gods, built with plain HTML, CSS and JavaScript for GitHub Pages.
+
+## Languages
+
+The site supports:
+
+- English
+- Portuguese (Brazil)
+
+The language selector is in the header. It uses simple JavaScript and stores the visitor choice in:
+
+```txt
+localStorage["kalaya-language"]
+```
+
+To edit translated text, open `script.js` and update the `translations` object.
+
+To connect a visible element to a translation key, use:
+
+```html
+data-i18n="section.key"
+```
+
+For translated aria labels, use:
+
+```html
+data-i18n-aria="section.key"
+```
 
 ## Editing Content
 
-- Edit page text directly in `index.html`.
-- Keep section ids such as `game`, `gameplay`, `world`, `gallery` and `contact` if you want the navigation to keep working.
-- The final business email is currently `talesoffallengods@gmail.com`.
+- Main layout lives in `index.html`.
+- Visual styling lives in `style.css`.
+- Language switching, music controls, mobile menu, smooth scroll and lightbox live in `script.js`.
+- Keep section ids such as `game`, `gameplay`, `music`, `world`, `gallery` and `contact` if you want navigation to keep working.
+
+## Social Links
+
+Official links are in the `Business / Contact` section of `index.html`.
+
+Current links:
+
+```txt
+Steam:     https://store.steampowered.com/developer/NeanderthalGames
+Discord:   https://discord.gg/hzAZAQFkbS
+Itch.io:   https://neanderthalgames.itch.io/kalaya-tofg-demo
+YouTube:   https://www.youtube.com/@NeanderthalGames
+Instagram: https://www.instagram.com/neanderthalgames/
+Email:     talesoffallengods@gmail.com
+```
+
+Update the `href` values in `index.html` if these change later.
 
 ## Assets
 
@@ -14,11 +59,29 @@ Static portfolio website for Kalaya - Tales of Fallen Gods, built with plain HTM
 assets/logo/        -> logos, character icon and studio logo
 assets/screenshots/ -> screenshots, gallery images and og-image.png
 assets/video/       -> gameplay/trailer video files or youtube.txt
-assets/music/       -> site music for the play/pause button
+assets/music/       -> site music for the dedicated music section
 assets/bg/          -> hero/background artwork
 assets/icons/       -> small icons and favicon
 assets/concept/     -> concept art and key art
 ```
+
+## Adding Images
+
+The gallery is manually organized in `index.html` into:
+
+- Screenshots
+- Concept Art
+- Brand Assets
+
+To add an image:
+
+1. Place the file in the correct folder under `assets/`.
+2. Add a new `.gallery-item` button in the right gallery block.
+3. Set `data-lightbox` to the image path.
+4. Add `data-title-en`, `data-title-pt`, `data-alt-en` and `data-alt-pt`.
+5. Keep paths relative, such as `assets/screenshots/new-image.png`.
+
+Do not use `/assets/...`, because this site is expected to run under `/kalayagame` on GitHub Pages.
 
 ## Background
 
@@ -28,11 +91,11 @@ The hero background currently uses:
 assets/bg/hero-bg.png
 ```
 
-Keep paths relative. Do not use `/assets/...`, because this site is expected to run under `/kalayagame` on GitHub Pages.
+Change the `background-image` in `style.css` if you replace the hero background.
 
 ## Music
 
-The floating music button uses:
+The music section currently uses:
 
 ```txt
 assets/music/kalaya-main-theme.wav
@@ -48,13 +111,21 @@ Rules:
 
 The current `.wav` file is larger than ideal. A smaller `.mp3` or `.ogg` is recommended before publishing widely.
 
+To change the track, update the `<source>` inside the `site-music` audio element in `index.html`.
+
 ## Video
 
 To add gameplay video, use one of these options:
 
-- Add `assets/video/youtube.txt` with a YouTube link.
-- Add a local `.mp4` in `assets/video/`.
+- Add `assets/video/youtube.txt` with a YouTube link, then replace the fallback block in `index.html` with an embed.
+- Add a local `.mp4` in `assets/video/` and use `<video controls>`.
 - Add `gameplay-thumb.jpg` or another thumbnail in `assets/video/` if you use local video.
+
+The current gameplay section uses the YouTube link stored in:
+
+```txt
+assets/video/youtube.txt
+```
 
 Recommended local video size:
 
@@ -66,18 +137,6 @@ Never use above 100 MB
 ```
 
 If no video exists, the site shows a polished "Gameplay video coming soon" fallback.
-
-## Social Links
-
-Social links are in the `Business / Contact` section of `index.html`.
-
-Look for this comment:
-
-```html
-<!-- Edit these href values when official pages are available. -->
-```
-
-Replace `#` with the future Itch.io, Steam, YouTube, Instagram and Discord links.
 
 ## Asset Naming
 
