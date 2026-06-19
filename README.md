@@ -1,48 +1,89 @@
 # Kalaya - Tales of Fallen Gods
 
-Estrutura inicial para o site estatico do jogo, pronta para ser usada depois no GitHub Pages.
+Estrutura do site estatico do jogo, preparada para GitHub Pages e para a futura geracao do site completo.
 
-## Onde colocar cada arquivo
+## Onde colocar os arquivos
 
-`assets/logo/`
+```txt
+assets/logo/        -> logos e favicon
+assets/screenshots/ -> screenshots para galeria
+assets/video/       -> gameplay/trailer leve ou youtube.txt
+assets/music/       -> musicas do jogo para player do site
+assets/bg/          -> backgrounds da hero/site
+assets/icons/       -> icones
+assets/concept/     -> concept art/key art
+```
 
-- logo do jogo
-- variacoes do logo
-- favicon se tiver
+## Regras de video
 
-`assets/screenshots/`
+```txt
+Video local ideal: 8-15 MB
+Maximo recomendado: 25 MB
+Evitar acima de 50 MB
+Nunca usar acima de 100 MB
+```
 
-- screenshots finais do jogo
-- imagens para galeria
-- `og-image.jpg` para preview no Discord/WhatsApp
+## Regras de musica
 
-`assets/video/`
+```txt
+Musica ideal: 2-8 MB
+Maximo recomendado: 10 MB por faixa
+Formatos: .mp3, .ogg ou .wav
+Sem autoplay obrigatorio
+```
 
-- `youtube.txt` com o link do trailer/gameplay
-- ou um MP4 leve, caso queira video local
+O player do site deve usar um botao simples:
 
-`assets/presskit/`
+```txt
+Play Music / Pause Music
+```
 
-- `kalaya-presskit.zip`
-- PDF, imagens, logos e material de imprensa
+A musica nao deve tocar automaticamente ao abrir o site. Ela deve comecar somente depois do clique do usuario.
 
-`assets/icons/`
+## Regras de background
 
-- icones pequenos de UI/social/favicon
+```txt
+Imagem recomendada: .jpg, .png ou .webp
+Nome recomendado: hero-bg.jpg
+Usar imagem escura ou com espaco visual para texto
+```
 
-`assets/concept/`
+Se nao houver imagem em `assets/bg/`, use um fallback visual em CSS com gradiente escuro.
 
-- key art
-- concept art
-- imagens de referencia publicas do projeto
+## Asset naming
+
+Use nomes web seguros para todos os arquivos em `assets/`:
+
+```txt
+minusculo
+sem espaco
+sem acento
+com hifen
+sem parenteses
+sem caracteres especiais
+```
+
+Exemplos:
+
+```txt
+screenshot-01.png
+kalaya-gameplay-final-01.mp4
+kalaya-main-theme.wav
+hero-bg.png
+```
+
+Se houver conflito de nomes, adicione sufixos como `-01`, `-02` ou `-03`.
 
 ## O que nao colocar neste repositorio
 
-- build do jogo
-- arquivos `.uproject`
-- codigo fonte do jogo
-- assets crus confidenciais
-- documentos financeiros
-- contratos
-- pitch deck confidencial
-- videos gigantes
+```txt
+build do jogo
+.uproject
+codigo fonte do jogo
+pasta Content da Unreal
+assets crus confidenciais
+documentos financeiros
+contratos
+pitch deck confidencial
+arquivos gigantes
+```
