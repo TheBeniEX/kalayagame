@@ -3,27 +3,252 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kalaya &ndash; Tales of Fallen Gods</title>
+    <title>Kalaya &ndash; Tales of Fallen Gods | Official Game Portfolio</title>
+    <meta
+      name="description"
+      content="Kalaya - Tales of Fallen Gods is a mythic action-adventure about fallen gods, forgotten memories, elemental combat and the power to stop time."
+    >
+    <meta property="og:title" content="Kalaya - Tales of Fallen Gods">
+    <meta
+      property="og:description"
+      content="A mythic action-adventure blending hack n' slash combat, RPG progression, puzzles, alchemy and time manipulation."
+    >
+    <meta property="og:image" content="assets/screenshots/og-image.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/icons/kalaya-icon.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main class="hero">
-      <section class="preview" aria-label="Kalaya site preview">
-        <p class="eyebrow">Site assets prepared</p>
-        <h1>Kalaya &ndash; Tales of Fallen Gods</h1>
-        <p>Assets are organized for the next full website generation step.</p>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Kalaya home">
+        <img src="assets/logo/kalaya-character-icon.png" alt="" width="44" height="44">
+        <span>Kalaya</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="#game">Game</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#world">World</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-        <audio id="site-music" loop preload="none">
-          <source src="assets/music/kalaya-main-theme.wav" type="audio/wav">
-        </audio>
+    <main id="top">
+      <section class="hero" id="game" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <img class="hero-logo" src="assets/logo/kalaya-logo-night.png" alt="Kalaya - Tales of Fallen Gods">
+          <p class="eyebrow">Mythic Action-Adventure</p>
+          <h1 id="hero-title">Kalaya &ndash; Tales of Fallen Gods</h1>
+          <p class="hero-subtitle">
+            A mythic action-adventure about fallen gods, forgotten memories, elemental combat and the power to stop time.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#gameplay">Watch Gameplay</a>
+            <a class="button button-ghost" href="#world">Explore the World</a>
+            <a class="button button-quiet" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">Scroll</div>
+      </section>
 
-        <button id="music-toggle" class="music-button" type="button">
-          Play Music
-        </button>
+      <section class="section pitch-section" aria-labelledby="pitch-title">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">The Game</p>
+            <h2 id="pitch-title">A goddess, a lost past and worlds shaped by ancient forces.</h2>
+          </div>
+          <div class="prose">
+            <p>
+              Kalaya &ndash; Tales of Fallen Gods is an action-adventure game blending hack n' slash combat, RPG
+              progression, elemental systems, puzzles, alchemy and time manipulation.
+            </p>
+            <p>
+              Players follow Kalaya, a forgotten goddess living as a human, through mythological worlds shaped by fallen
+              gods, silent colossal creatures and fragments of a larger divine truth.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <p class="asset-status">Background ready: assets/bg/hero-bg.png</p>
+      <section class="section" aria-labelledby="pillars-title">
+        <div class="section-heading">
+          <p class="eyebrow">Gameplay Pillars</p>
+          <h2 id="pillars-title">Combat, craft and mystery moving as one.</h2>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span class="card-mark">01</span>
+            <h3>Elemental Combat</h3>
+            <p>Switch elements to open enemy weaknesses, shape combos and respond to shifting encounters.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-mark">02</span>
+            <h3>Melee &amp; Ranged Action</h3>
+            <p>Move between close-range pressure, ranged tools and stylish action built for readable impact.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-mark">03</span>
+            <h3>Time Stop</h3>
+            <p>Freeze moments to solve puzzles, control space and turn impossible combat windows into opportunity.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-mark">04</span>
+            <h3>Alchemy &amp; Craft</h3>
+            <p>Gather, combine and use crafted resources to interact with the world and expand player expression.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-mark">05</span>
+            <h3>Mythological Worlds</h3>
+            <p>Explore places where different mythologies echo the same primordial forces in different forms.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-mark">06</span>
+            <h3>Puzzles &amp; Exploration</h3>
+            <p>Uncover secrets through environmental logic, traversal, dungeons and narrative discovery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gameplay-section" id="gameplay" aria-labelledby="gameplay-title">
+        <div class="section-heading">
+          <p class="eyebrow">Gameplay</p>
+          <h2 id="gameplay-title">Prototype footage and gameplay materials.</h2>
+        </div>
+        <div class="video-frame" data-video-frame>
+          <div class="video-fallback">
+            <span class="fallback-symbol" aria-hidden="true">▶</span>
+            <h3>Gameplay video coming soon.</h3>
+            <p>The project is ready to embed a trailer from YouTube or a local gameplay video when available.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Screenshots and visual direction.</h2>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-wide" type="button" data-lightbox="assets/screenshots/kalaya-character-landscape-01.png" data-title="Kalaya overlooking Realtha">
+            <img src="assets/screenshots/kalaya-character-landscape-01.png" alt="Kalaya in front of a magical landscape" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/realtha-village-01.png" data-title="Realtha village">
+            <img src="assets/screenshots/realtha-village-01.png" alt="A view of Realtha with mountains, a lake and a floating structure" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/fallen-star-landscape-01.png" data-title="Fallen star landscape">
+            <img src="assets/screenshots/fallen-star-landscape-01.png" alt="A magical landscape with a bright celestial body and floating islands" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="assets/screenshots/main-menu-01.png" data-title="Main menu scene">
+            <img src="assets/screenshots/main-menu-01.png" alt="Kalaya main menu with characters under a magical sky" loading="lazy">
+          </button>
+          <button class="gallery-item gallery-tall" type="button" data-lightbox="assets/concept/kalaya-character-sheet-01.png" data-title="Kalaya character sheet">
+            <img src="assets/concept/kalaya-character-sheet-01.png" alt="Kalaya character sheet with outfit and equipment details" loading="lazy">
+          </button>
+          <button class="gallery-item" type="button" data-lightbox="assets/concept/realtha-landscape-concept-01.png" data-title="Realtha landscape concept">
+            <img src="assets/concept/realtha-landscape-concept-01.png" alt="Painted concept art of a green valley and mountains" loading="lazy">
+          </button>
+        </div>
+      </section>
+
+      <section class="section world-section" id="world" aria-labelledby="world-title">
+        <div class="world-art" aria-hidden="true"></div>
+        <div class="world-copy">
+          <p class="eyebrow">World / Lore</p>
+          <h2 id="world-title">Realtha was born around the crater of a fallen star.</h2>
+          <p>
+            Its magic shaped the land, its people and the mysteries surrounding the giant silent creatures that appeared
+            across the world. They are immense, peaceful and impossible to understand.
+          </p>
+          <p>
+            Before the star fell, the creatures began appearing across the planet. Above Realtha stands a colossal tree,
+            provisionally called Yggdrasil, watching over a village touched by celestial power.
+          </p>
+          <p>
+            In Kalaya, myths are not separate stories. They are fragments of a larger divine truth, connected by fallen
+            gods and ancient forces older than memory.
+          </p>
+        </div>
+      </section>
+
+      <section class="section features-section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">Built for action, discovery and mythic scale.</h2>
+        </div>
+        <ul class="feature-list">
+          <li>Fast-paced hack n' slash combat</li>
+          <li>Element switching system</li>
+          <li>Time-stop mechanics for combat and puzzles</li>
+          <li>Alchemy, crafting and environmental interactions</li>
+          <li>Mythology-inspired worlds</li>
+          <li>Dungeons, bosses and narrative exploration</li>
+          <li>Built in Unreal Engine</li>
+        </ul>
+      </section>
+
+      <section class="section about-section" aria-labelledby="about-title">
+        <div class="about-card">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">An independent game project led by Beni.</h2>
+          </div>
+          <p>
+            Kalaya &ndash; Tales of Fallen Gods is an independent game project led by Beni, founder, game designer and
+            programmer, responsible for the core gameplay systems, Unreal implementation and creative direction of the
+            prototype.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <p class="eyebrow">Business / Contact</p>
+          <h2 id="contact-title">For publishing, events, business and press conversations.</h2>
+          <p>
+            Reach out for gameplay materials, business inquiries, event opportunities or project conversations.
+          </p>
+          <a class="contact-email" href="mailto:talesoffallengods@gmail.com">talesoffallengods@gmail.com</a>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:talesoffallengods@gmail.com">Contact by Email</a>
+            <a class="button button-ghost" href="#gameplay">Watch Gameplay</a>
+            <a class="button button-quiet" href="#">Follow Development</a>
+          </div>
+          <div class="social-links" aria-label="Future social links">
+            <!-- Edit these href values when official pages are available. -->
+            <a href="#" aria-label="Itch.io">Itch.io</a>
+            <a href="#" aria-label="Steam">Steam</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Discord">Discord</a>
+          </div>
+        </div>
       </section>
     </main>
+
+    <audio id="site-music" loop preload="none">
+      <source src="assets/music/kalaya-main-theme.wav" type="audio/wav">
+    </audio>
+
+    <button id="music-toggle" class="music-toggle" type="button" aria-label="Play music">
+      <span class="music-icon" aria-hidden="true">♪</span>
+      <span class="music-label">Play Music</span>
+    </button>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image" aria-hidden="true" data-lightbox-modal>
+      <button class="lightbox-close" type="button" aria-label="Close gallery" data-lightbox-close>×</button>
+      <img src="" alt="" data-lightbox-image>
+      <p data-lightbox-caption></p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,58 +1,87 @@
 # Kalaya - Tales of Fallen Gods
 
-Estrutura do site estatico do jogo, preparada para GitHub Pages e para a futura geracao do site completo.
+Static portfolio website for Kalaya - Tales of Fallen Gods, built with plain HTML, CSS and JavaScript for GitHub Pages.
 
-## Onde colocar os arquivos
+## Editing Content
 
-```txt
-assets/logo/        -> logos e favicon
-assets/screenshots/ -> screenshots para galeria
-assets/video/       -> gameplay/trailer leve ou youtube.txt
-assets/music/       -> musicas do jogo para player do site
-assets/bg/          -> backgrounds da hero/site
-assets/icons/       -> icones
-assets/concept/     -> concept art/key art
-```
+- Edit page text directly in `index.html`.
+- Keep section ids such as `game`, `gameplay`, `world`, `gallery` and `contact` if you want the navigation to keep working.
+- The final business email is currently `talesoffallengods@gmail.com`.
 
-## Regras de video
+## Assets
 
 ```txt
-Video local ideal: 8-15 MB
-Maximo recomendado: 25 MB
-Evitar acima de 50 MB
-Nunca usar acima de 100 MB
+assets/logo/        -> logos, character icon and studio logo
+assets/screenshots/ -> screenshots, gallery images and og-image.png
+assets/video/       -> gameplay/trailer video files or youtube.txt
+assets/music/       -> site music for the play/pause button
+assets/bg/          -> hero/background artwork
+assets/icons/       -> small icons and favicon
+assets/concept/     -> concept art and key art
 ```
 
-## Regras de musica
+## Background
+
+The hero background currently uses:
 
 ```txt
-Musica ideal: 2-8 MB
-Maximo recomendado: 10 MB por faixa
-Formatos: .mp3, .ogg ou .wav
-Sem autoplay obrigatorio
+assets/bg/hero-bg.png
 ```
 
-O player do site deve usar um botao simples:
+Keep paths relative. Do not use `/assets/...`, because this site is expected to run under `/kalayagame` on GitHub Pages.
+
+## Music
+
+The floating music button uses:
 
 ```txt
-Play Music / Pause Music
+assets/music/kalaya-main-theme.wav
 ```
 
-A musica nao deve tocar automaticamente ao abrir o site. Ela deve comecar somente depois do clique do usuario.
+Rules:
 
-## Regras de background
+- no autoplay
+- starts only after user click
+- accepted formats: `.mp3`, `.ogg`, `.wav`
+- recommended size: 2-8 MB
+- maximum recommended size: 10 MB per track
+
+The current `.wav` file is larger than ideal. A smaller `.mp3` or `.ogg` is recommended before publishing widely.
+
+## Video
+
+To add gameplay video, use one of these options:
+
+- Add `assets/video/youtube.txt` with a YouTube link.
+- Add a local `.mp4` in `assets/video/`.
+- Add `gameplay-thumb.jpg` or another thumbnail in `assets/video/` if you use local video.
+
+Recommended local video size:
 
 ```txt
-Imagem recomendada: .jpg, .png ou .webp
-Nome recomendado: hero-bg.jpg
-Usar imagem escura ou com espaco visual para texto
+Ideal: 8-15 MB
+Maximum recommended: 25 MB
+Avoid above 50 MB
+Never use above 100 MB
 ```
 
-Se nao houver imagem em `assets/bg/`, use um fallback visual em CSS com gradiente escuro.
+If no video exists, the site shows a polished "Gameplay video coming soon" fallback.
 
-## Asset naming
+## Social Links
 
-Use nomes web seguros para todos os arquivos em `assets/`:
+Social links are in the `Business / Contact` section of `index.html`.
+
+Look for this comment:
+
+```html
+<!-- Edit these href values when official pages are available. -->
+```
+
+Replace `#` with the future Itch.io, Steam, YouTube, Instagram and Discord links.
+
+## Asset Naming
+
+Use web-safe names for new assets:
 
 - lowercase
 - no spaces
@@ -60,30 +89,52 @@ Use nomes web seguros para todos os arquivos em `assets/`:
 - hyphen-separated
 - short descriptive names
 
-Exemplos:
+Examples:
 
 ```txt
 kalaya-logo-orange.png
 realtha-village-01.png
 kalaya-character-landscape-01.png
 og-image.png
-kalaya-gameplay-final-01.mp4
 kalaya-main-theme.wav
 hero-bg.png
 ```
 
-Novos assets devem seguir o mesmo padrao. Se houver conflito de nomes, adicione sufixos como `-01`, `-02` ou `-03`.
+## GitHub Pages
 
-## O que nao colocar neste repositorio
+This repository is intended for a GitHub Pages project site, likely:
 
 ```txt
-build do jogo
+https://thebeniex.github.io/kalayagame
+```
+
+Publishing checklist:
+
+1. Push the repository to GitHub.
+2. Open repository settings.
+3. Go to Pages.
+4. Select the `main` branch.
+5. Use the root folder.
+6. Save and wait for GitHub Pages to build.
+
+All asset paths should stay relative so the site works from `/kalayagame`.
+
+## Press Kit
+
+There is no press kit section yet.
+
+Do not add a `Download Press Kit` button until the press kit is ready.
+
+## Do Not Commit
+
+```txt
+game builds
 .uproject
-codigo fonte do jogo
-pasta Content da Unreal
-assets crus confidenciais
-documentos financeiros
-contratos
-pitch deck confidencial
-arquivos gigantes
+game source code
+Unreal Content folder
+confidential raw assets
+financial documents
+contracts
+confidential pitch decks
+huge files
 ```
