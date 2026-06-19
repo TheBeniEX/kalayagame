@@ -54,25 +54,25 @@ Se nao houver imagem em `assets/bg/`, use um fallback visual em CSS com gradient
 
 Use nomes web seguros para todos os arquivos em `assets/`:
 
-```txt
-minusculo
-sem espaco
-sem acento
-com hifen
-sem parenteses
-sem caracteres especiais
-```
+- lowercase
+- no spaces
+- no accents
+- hyphen-separated
+- short descriptive names
 
 Exemplos:
 
 ```txt
-screenshot-01.png
+kalaya-logo-orange.png
+realtha-village-01.png
+kalaya-character-landscape-01.png
+og-image.png
 kalaya-gameplay-final-01.mp4
 kalaya-main-theme.wav
 hero-bg.png
 ```
 
-Se houver conflito de nomes, adicione sufixos como `-01`, `-02` ou `-03`.
+Novos assets devem seguir o mesmo padrao. Se houver conflito de nomes, adicione sufixos como `-01`, `-02` ou `-03`.
 
 ## O que nao colocar neste repositorio
 
